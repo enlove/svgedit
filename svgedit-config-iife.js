@@ -9496,7 +9496,8 @@
       addScriptAtts(script, atts);
       script.addEventListener('error', scriptOnError);
       script.addEventListener('load', scriptOnLoad);
-      script.src = url;
+	  url=url.replace(/zh_/g, 'zh-');//fix zh-CN、zh-HK、zh-TW language bug
+	  script.src = url; 
       document.head.append(script);
     });
   }
@@ -28353,6 +28354,7 @@
               }
 
               url = conf.langPath + 'lang.' + langParam + '.js';
+			  langParam=langParam.replace(/-/g, '_');//fix zh-CN、zh-HK、zh-TW language bug
               _context2.t0 = readLang;
               _context2.next = 5;
               return importSetGlobalDefault(url, {
