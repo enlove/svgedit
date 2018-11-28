@@ -36003,8 +36003,8 @@
             switch (_context17.prev = _context17.next) {
               case 0:
                 editor.langChanged = true;
-                $$b.pref('lang', lang);
-                $$b('#lang_select').val(lang);
+                $$b.pref('lang', lang.replace(/zh_/g,'zh-'));
+                $$b('#lang_select').val(lang.replace(/zh_/g,'zh-'));
 
                 if (allStrings) {
                   _context17.next = 5;
