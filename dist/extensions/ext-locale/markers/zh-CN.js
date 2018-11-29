@@ -62,17 +62,17 @@ var svgEditorExtensionLocale_markers_zh_CN = (function () {
       title: '开始标记',
       label: 's'
     }, {
-      title: '选择开始标记类型'
+      title: '开始标记'
     }, {
       title: '中段标记',
       label: 'm'
     }, {
-      title: '选择中段标记类型'
+      title: '中段标记'
     }, {
       title: '末端标记',
       label: 'e'
     }, {
-      title: '选择末端标记类型'
+      title: '末端标记'
     }]
   };
 
